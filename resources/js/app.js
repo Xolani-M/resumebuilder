@@ -35,6 +35,7 @@ let nameDsp = document.getElementById('fullname_dsp'),
     designationDsp = document.getElementById('designation_dsp'),
     summaryDsp = document.getElementById('summary_dsp'),
     projectsDsp = document.getElementById('projects_dsp'),
+    proSummaryDsp = document.getElementById('pro_summary_dsp'),
     achievementsDsp = document.getElementById('achievements_dsp'),
     skillsDsp = document.getElementById('skills_dsp'),
     educationsDsp = document.getElementById('educations_dsp'),
@@ -62,6 +63,10 @@ const fetchValues = (attrs, ...nodeLists) => {
 
 const getUserInputs = () => {
 
+    //Profession Summary
+    let proSummaryDescriptionElem = document.querySelector('.pro_summary_description');
+
+    
     // achivements 
     let achievementsTitleElem = document.querySelectorAll('.achieve_title'),
     achievementsDescriptionElem = document.querySelectorAll('.achieve_description');
@@ -97,6 +102,7 @@ const getUserInputs = () => {
     addressElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Address'));
     designationElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'Designation'));
 
+    proSummaryDescriptionElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'Summary'));
     achievementsTitleElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Title')));
     achievementsDescriptionElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Description')));
     expTitleElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Title')));
@@ -125,6 +131,7 @@ const getUserInputs = () => {
         email: emailElem.value,
         phoneno: phonenoElem.value,
         summary: summaryElem.value,
+        prosummary: proSummaryDescriptionElem.value,
         achievements: fetchValues(['achieve_title', 'achieve_description'], achievementsTitleElem, achievementsDescriptionElem),
         experiences: fetchValues(['exp_title', 'exp_organization', 'exp_location', 'exp_start_date', 'exp_end_date', 'exp_description'], expTitleElem, expOrganizationElem, expLocationElem, expStartDateElem, expEndDateElem, expDescriptionElem),
         educations: fetchValues(['edu_school', 'edu_degree', 'edu_city', 'edu_start_date', 'edu_graduation_date', 'edu_description'], eduSchoolElem, eduDegreeElem, eduCityElem, eduStartDateElem, eduGraduationDateElem, eduDescriptionElem),
@@ -199,7 +206,8 @@ const displayCV = (userData) => {
     emailDsp.innerHTML = userData.email;
     addressDsp.innerHTML = userData.address;
     designationDsp.innerHTML = userData.designation;
-    summaryDsp.innerHTML = userData.summary;
+    summaryDsp.innerHTML = userData.prosummary;
+    proSummaryDsp.innerHTML =proSummaryDsp.innerHTML = userData.prosummary;
     showListData(userData.projects, projectsDsp);
     showListData(userData.achievements, achievementsDsp);
     showListData(userData.skills, skillsDsp);
