@@ -17,7 +17,7 @@ To get started with the project, follow these steps:
 2. Navigate to the project directory: `cd resumeMaker`
 3. Open the `index.html` file in your preferred web browser
 
-Alternatively, you can access the live version of the website at [Resume-Buid](https://resumewiz101.netlify.app/) (fictional URL).
+Alternatively, you can access the live version of the website at [Resume-Buid](https://resumewiz101.netlify.app/).
 
 # Resume Page
 
