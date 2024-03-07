@@ -82,13 +82,13 @@
                                         <span class="form-text"></span>
                                     </div>
                                     <div class = "form-elem">
-                                        <label for = "" class = "form-label">Phone No:</label>
+                                        <label for = "" class = "form-label">Phone</label>
                                         <input name = "phoneno" type = "text" class = "form-control phoneno" id = "" onkeyup="generateCV()" placeholder="e.g. 071 234 4487">
                                         <span class="form-text"></span>
                                     </div>
                                     <div class = "form-elem">
-                                        <label for = "" class = "form-label">Summary</label>
-                                        <input name = "summary" type = "text" class = "form-control summary" id = "" onkeyup="generateCV()" placeholder="e.g. I am a kick ass technician with robust diagnostic and repairing skills">
+                                        <label for = "" class = "form-label">Personal Summary</label>
+                                        <input name = "personalsummary" type = "text" class = "form-control personalsummary" id = "" onkeyup="generateCV()" placeholder="e.g. kick ass technician with diagnostic and repairing skills">
                                         <span class="form-text"></span>
                                     </div>
                                 </div>
@@ -314,6 +314,11 @@
             </div>
         </section>
 
+        <div class="color-picker-container">
+            <label for="colorPicker">Choose a background color</label>
+            <input type="color" id="colorPicker">
+        </div>
+
         <section id = "preview-sc" class = "print_area">
             <div class = "container">
                 <div class = "preview-cnt">
@@ -345,7 +350,7 @@
                                     <span class = "preview-item-val" id = "address_dsp"></span>
                                 </div>
                                 <div class = "preview-item">
-                                    <span class = "preview-item-val" id = "summary_dsp"></span>
+                                    <span class = "preview-item-val" id = "personalsummary_dsp"></span>
                                 </div>
                             </div>
                         </div>

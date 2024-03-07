@@ -272,37 +272,6 @@ a{
     margin-top: 3rem;
 }
 
-/* section two */
-.section-two{
-    padding: 64px 0;
-}
-.section-two .section-items{
-    display: grid;
-    gap: 2rem;
-}
-
-.section-two .section-item{
-    max-width: 350px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-}
-.section-two .section-item-icon{
-    margin: 1rem 0;
-}
-.section-two .section-item-icon img{
-    width: 200px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.section-two .section-item-title{
-    color: var(--clr-blue-dark);
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.section-two .text{
-    margin: 0.9rem 0;
-}
 
 /* footer */
 .footer{
@@ -592,4 +561,80 @@ textarea{
         top: 0;
         overflow: hidden;
     }
+}
+
+
+
+
+#collaborate {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .collaborate-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .collaborate-container h2 {
+    font-size: 3rem; /* Adjusted font size */
+    color: #333;
+  }
+  
+  .collaborate-container p {
+    font-size: 1.7rem; /* Adjusted font size */
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .collaborate-container a {
+    font-size: 1.5rem; /* Adjusted font size */
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .collaborate-container button.btn {
+    font-size: 1.4rem; /* Adjusted font size */
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .color-picker-container {
+    font-family: 'Roboto', sans-serif;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.color-picker-container label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.color-picker-container input[type="color"] {
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.color-picker-container input[type="color"]:focus {
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }

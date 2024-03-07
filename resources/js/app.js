@@ -24,7 +24,7 @@ let firstnameElem = mainForm.firstname,
     addressElem = mainForm.address,
     emailElem = mainForm.email,
     phonenoElem = mainForm.phoneno,
-    summaryElem = mainForm.summary;
+    personalsummaryElem = mainForm.personalsummary;
 
 // display elements
 let nameDsp = document.getElementById('fullname_dsp'),
@@ -33,7 +33,7 @@ let nameDsp = document.getElementById('fullname_dsp'),
     emailDsp = document.getElementById('email_dsp'),
     addressDsp = document.getElementById('address_dsp'),
     designationDsp = document.getElementById('designation_dsp'),
-    summaryDsp = document.getElementById('summary_dsp'),
+    personalsummaryDsp = document.getElementById('personalsummary_dsp'),
     projectsDsp = document.getElementById('projects_dsp'),
     proSummaryDsp = document.getElementById('pro_summary_dsp'),
     achievementsDsp = document.getElementById('achievements_dsp'),
@@ -102,7 +102,7 @@ const getUserInputs = () => {
     addressElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Address'));
     designationElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'Designation'));
 
-    proSummaryDescriptionElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'Summary'));
+    // proSummaryDescriptionElem.addEventListener('keyup', (e) => validateFormData(e.target, validType.TEXT, 'Summary'));
     achievementsTitleElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Title')));
     achievementsDescriptionElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Description')));
     expTitleElem.forEach(item => item.addEventListener('keyup', (e) => validateFormData(e.target, validType.ANY, 'Title')));
@@ -130,7 +130,7 @@ const getUserInputs = () => {
         address: addressElem.value,
         email: emailElem.value,
         phoneno: phonenoElem.value,
-        summary: summaryElem.value,
+        personalsummary: personalsummaryElem.value,
         prosummary: proSummaryDescriptionElem.value,
         achievements: fetchValues(['achieve_title', 'achieve_description'], achievementsTitleElem, achievementsDescriptionElem),
         experiences: fetchValues(['exp_title', 'exp_organization', 'exp_location', 'exp_start_date', 'exp_end_date', 'exp_description'], expTitleElem, expOrganizationElem, expLocationElem, expStartDateElem, expEndDateElem, expDescriptionElem),
@@ -206,8 +206,8 @@ const displayCV = (userData) => {
     emailDsp.innerHTML = userData.email;
     addressDsp.innerHTML = userData.address;
     designationDsp.innerHTML = userData.designation;
-    summaryDsp.innerHTML = userData.prosummary;
-    proSummaryDsp.innerHTML =proSummaryDsp.innerHTML = userData.prosummary;
+    personalsummaryDsp.innerHTML = userData.personalsummary;
+    proSummaryDsp.innerHTML = proSummaryDsp.innerHTML = userData.prosummary;
     showListData(userData.projects, projectsDsp);
     showListData(userData.achievements, achievementsDsp);
     showListData(userData.skills, skillsDsp);
@@ -234,3 +234,30 @@ function previewImage(){
 function printCV(){
     window.print();
 }
+
+
+
+
+// JavaScript for smooth scrolling to collaborate section
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const colorPicker = document.getElementById("colorPicker");
+    const previewCnt = document.querySelector(".preview-cnt-l");
+
+    colorPicker.addEventListener("input", function() {
+        const selectedColor = colorPicker.value;
+        previewCnt.style.backgroundColor = selectedColor;
+        previewCnt.style.boxShadow = `0 0 10px ${selectedColor}`;
+    });
+});
