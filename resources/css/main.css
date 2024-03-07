@@ -475,7 +475,8 @@ textarea{
 
 .achievements-items.preview-blk-list .preview-item span:first-child,
 .educations-items.preview-blk-list .preview-item span:first-child,
-.experiences-items.preview-blk-list .preview-item span:first-child{
+.experiences-items.preview-blk-list .preview-item span:first-child,
+.projects-items.preview-blk-list .preview-item span:first-child{
     display: block;
     font-weight: 600;
     margin-bottom: 1rem;
