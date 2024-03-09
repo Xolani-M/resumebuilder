@@ -2,8 +2,6 @@
 
 Welcome to the Online Resume Builder project! This web application allows users to create professional resumes easily and efficiently.
 
-![Project Screenshot](project_screenshot.png)
-
 ## Features
 
 - **User-Friendly Interface**: Intuitive interface for seamless resume creation.
