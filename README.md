@@ -1,42 +1,74 @@
-# Online Resume Builder
+# Free Online Resume Builder
 
-Welcome to the Online Resume Builder project! This web application allows users to create professional resumes easily and efficiently.
+This web application simplifies resume creation, featuring a user-friendly interface, dynamic CV preview, and customizable styling options. The app ensures that resumes are optimized for success by adhering to best practices such as using standard fonts, clear section headings, and avoiding complex formatting.
 
 ## Features
 
-- **User-Friendly Interface**: Intuitive interface for seamless resume creation.
-- **Dynamic CV Preview**: Real-time preview of the resume as users input their details.
-- **Customizable Styling**: Ability to choose background colors for the CV preview.
-- **Multiple Sections**: Sections for personal details, professional summary, achievements, experiences, education, projects, and skills.
-- **Repetitive Element Handling**: Utilizes jQuery Repeater plugin for handling repetitive form elements.
-- **Print Functionality**: Option to print the generated CV directly from the application.
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- jQuery
-- jQuery Repeater Plugin
+- User-friendly interface
+- Customizable sections (education, work experience, skills, etc.)
+- Preview and download options (PDF, Word, etc.)
+- Responsive design for optimal viewing on different devices
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your_username/online-resume-builder.git`
-2. Navigate to the project directory: `cd online-resume-builder`
-3. Open `index.html` in your preferred web browser.
+To get started with the project, follow these steps:
 
-## How to Use
+1. Clone the repository: `git clone https://github.com/Xolani-M/resumeMaker.git`
+2. Navigate to the project directory: `cd resumeMaker`
+3. Open the `index.html` file in your preferred web browser
 
-1. Fill in your personal details in the designated form fields.
-2. Add your professional summary, achievements, experiences, education, projects, and skills as needed.
-3. Optionally, choose a background color for the CV preview using the color picker.
-4. Preview your CV in real-time and make any necessary adjustments.
-5. Once satisfied, you can print your CV directly from the application.
+Alternatively, you can access the live version of the website at [Resume-Buid](https://resumewiz101.netlify.app/).
+
+# Resume Page
+
+This is a sample HTML code for a Resume Page.
+
+## Table of Contents
+
+- [Description](#description)
+- [Usage](#usage)
+- [Preview](#preview)
+- [Scripts and Libraries](#scripts-and-libraries)
+
+## Description
+
+This HTML code represents a Resume Page with sections for personal details, professional summary, achievements, experience, education, projects, skills, and a preview section.
+
+## Usage
+
+You can use this HTML code as a template for creating your own resume page. Customize the content and styles to suit your needs.
+
+## Preview
+
+To see how the resume page will look, you can open the HTML file in a web browser.
+
+## Scripts and Libraries
+
+- jQuery CDN: Used for JavaScript functionality.
+- jQuery Repeater CDN: Used for repeating form elements.
+- Custom JavaScript files: `script.js` and `app.js` for additional functionality.
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+We welcome contributions from the community to make this project even better. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b my-feature-branch`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-feature-branch`
+5. Submit a pull request
+
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
 
 ## License
 
+
+
+
+## Contact
 
